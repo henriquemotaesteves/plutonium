@@ -1,0 +1,18 @@
+.vertical-panel {
+    display       : flex;
+    flex-direction: column;
+    padding       : 10px 10px 10px 10px;
+
+    > *:not(:last-child) {
+        margin-bottom: 10px;
+    }
+}
+
+.vertical-panel--v-align-items-center {
+    justify-content: center;
+}
+
+.vertical-panel--fill {
+    height: 100%;
+    width : 100%;
+}

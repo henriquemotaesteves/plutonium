@@ -1,0 +1,34 @@
+$color-primary   : #581845;
+$color-secondary : #900c3f;
+$color-tertiary  : #c70039;
+$color-quaternary: #ff5733;
+$color-quinary   : #ffc300;
+$color-white     : #ffffff;
+
+.color-scheme--background--primary {
+    background: $color-primary;
+}
+
+.color-scheme--background--tertiary {
+    background: $color-tertiary;
+}
+
+.color-scheme--background--quinary {
+    background: $color-quinary;
+}
+
+.color-scheme--border--primary {
+    border-color: $color-primary;
+}
+
+.color-scheme--border--secondary {
+    border-color: $color-secondary;
+}
+
+.color-scheme--border--quaternary {
+    border-color: $color-quaternary;
+}
+
+.color-scheme--foreground--white {
+    color: $color-white;
+}
