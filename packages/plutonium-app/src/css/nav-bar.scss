@@ -1,0 +1,31 @@
+@mixin nav-bar__panel($justify-content) {
+    align-items    : center;
+    display        : flex;
+    flex-basis     : 0;
+    flex-direction : row;
+    flex-grow      : 1;
+    justify-content: $justify-content;
+
+    > *:not(:last-child) {
+        margin-right: 25px;
+    }
+}
+
+.nav-bar {
+    display        : flex;
+    flex-basis     : 100px;
+    justify-content: space-between;
+    padding        : 10px 10px 10px 10px;
+}
+
+.nav-bar__right-panel {
+    @include nav-bar__panel(flex-start);
+}
+
+.nav-bar__center-panel {
+    @include nav-bar__panel(center);
+}
+
+.nav-bar__left-panel {
+    @include nav-bar__panel(flex-end);
+}

@@ -1,0 +1,46 @@
+{
+  "name"       : "@plutonium/app",
+  "version"    : "0.2.0-rc.1",
+  "description": "@plutonium/app",
+  "main"       : "build/app.js",
+  "repository" : "https://github.com/henriquemotaesteves/plutonium",
+  "author"     : "Henrique Mota Esteves",
+  "license"    : "MIT",
+  "private"    : false,
+
+  "nyc": {
+    "require"   : [ "@babel/register" ],
+    "reporter"  : [ "lcov", "text" ],
+    "sourceMap" : false,
+    "instrument": false
+  },
+
+  "devDependencies": {
+    "@babel/core"            : "^7.0.0",
+    "@babel/preset-env"      : "^7.0.0",
+    "@babel/preset-react"    : "^7.0.0",
+    "@babel/register"        : "^7.0.0",
+    "cucumber"               : "^5.0.1",
+    "babel-plugin-istanbul"  : "^5.1.0",
+    "chai"                   : "^4.2.0",
+    "chai-as-promised"       : "^7.1.1",
+    "del"                    : "^3.0.0",
+    "electron"               : "^2.0.8",
+    "electron-builder"       : "^20.28.3",
+    "gulp"                   : "^4.0.0",
+    "gulp-babel"             : "^8.0.0",
+    "gulp-cli"               : "^2.0.1",
+    "gulp-sass"              : "^4.0.1",
+    "merge-stream"           : "^1.0.1",
+    "node-sass"              : "^4.9.3",
+    "nyc"                    : "^13.1.0",
+    "spectron"               : "^4.0.0"
+  },
+
+  "dependencies": {
+    "@plutonium/core": "^0.2.0-rc.1",
+    "paper-css"      : "^0.4.1",
+    "react"          : "^16.4.2",
+    "react-dom"      : "^16.4.2"
+  }
+}

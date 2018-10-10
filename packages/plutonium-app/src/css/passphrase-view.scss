@@ -1,0 +1,39 @@
+.passphrase-view {
+    align-items    : center;
+    border-radius  : 10px;
+    border-style   : solid;
+    border-width   : 5px;
+    display        : flex;
+    flex-direction : row;
+    height         : 48px;
+    justify-content: center;
+    padding        : 10px;
+}
+
+.passphrase-view__word {
+    align-items    : center;
+    border-style   : solid;
+    border-width   : 5px;
+    display        : flex;
+    flex-direction : row;
+    font-weight    : bold;
+    justify-content: center;
+}
+
+.passphrase-view__legend {
+    align-items   : center;
+    display       : flex;
+    flex-direction: row;
+    margin        : 0;
+
+    > *:not(:last-child) {
+        margin-right: 5px;
+    }
+}
+
+.passphrase-view__legend__item {
+    border-style: solid;
+    border-width: 5px;
+    height      : 10px;
+    width       : 10px;
+}

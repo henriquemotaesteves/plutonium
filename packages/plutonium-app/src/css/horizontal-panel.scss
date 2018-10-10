@@ -1,0 +1,17 @@
+.horizontal-panel {
+    display       : flex;
+    flex-direction: row;
+    padding       : 10px 10px 10px 10px;
+
+    > *:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.horizontal-panel--h-align-items-end {
+    justify-content: flex-end;
+}
+
+.horizontal-panel--v-align-items-center {
+    align-items: center;
+}

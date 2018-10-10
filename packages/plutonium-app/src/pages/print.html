@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Pu</title>
+
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/paper.css">
+
+        <!-- htmllint tag-bans="false" -->
+        <style>
+            @page {
+                size: A4 landscape
+            }
+        </style>
+        <!-- htmllint tag-bans="$previous" -->
+    </head>
+    <body class="A4 landscape">
+        <section class="sheet padding-10mm">
+            <div class="vertical-panel vertical-panel--fill vertical-panel--v-align-items-center">
+                <div id="print"></div>
+            </div>
+        </section>
+
+        <script>
+            require('./print.js');
+        </script>
+    </body>
+</html>
